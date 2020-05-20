@@ -1,25 +1,37 @@
 "use strict";
 
-let numberOfFilms = prompt ('Сколько фильмов Вы уже просмотрели?', '');
-
-const personalMovieDB = {
-    'count': numberOfFilms,
-    'movies': {},
-    'actors': {},
-    'genres': [],
-    'privat': false
-
-};
-
-let lastFilm = prompt ('Какой последний фильм Вы просмотрели?', ''),
-    lastFilmRang = prompt ('Во сколько Вы оцените этот фильм?', '');
-
-personalMovieDB.movies[lastFilm] = lastFilmRang;
+if (4 == 9) {
+    console.log('Ok!');
+} else {
+    console.log('Error');
+}
 
 
-lastFilm = prompt ('Какой последний фильм Вы просмотрели?', '');
-lastFilmRang = prompt ('Во сколько Вы оцените этот фильм?', '');
+const num = 50;
 
-personalMovieDB.movies[lastFilm] = lastFilmRang;
+// if (num < 49) {
+//     console.log('Error');
+// } else if (num > 100) {
+//     console.log('Too much');
+// } else {
+//     console.log('Ok!');
+// }
 
-console.log(personalMovieDB);
+
+// (num == 50) ? console.log('Ok!') : console.log('Error');
+
+
+switch (num) {
+    case 49:
+        console.log('No');
+        break;
+    case 51:
+        console.log('No');
+        break;
+    case 50:
+        console.log('Yes');
+        break;
+    default:
+        console.log('Next time');
+        break;
+}

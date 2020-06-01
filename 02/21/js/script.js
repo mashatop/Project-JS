@@ -32,6 +32,6 @@ function compareNum(a, b) {
 // }
 
 const str = prompt('', '');
-const products = str.split(', ');
+const products = str.split(', '); //  Преобразование строки в массив
 products.sort();
-console.log(products.join('; '));
+console.log(products.join('; ')); // Объдинение массива в строку
